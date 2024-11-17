@@ -1,0 +1,194 @@
+/*Styles Reset*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: linear-gradient(#910909,#1d1a54);
+}
+/*Style rules for title*/
+    h1 {
+        text-align: center;
+        font-size: 75pt;
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: white;
+        background-color: black;
+    }
+    h2{
+        text-align: center;
+        font-size: 60pt;
+    }
+
+/*Style Rules for Nav*/
+    nav{
+        background-color: blanchedalmond;
+    }
+    nav ul{
+        list-style-type: none;
+        text-align: center;
+        display: none;
+    }
+    nav li a{
+        color: #f6eee4;
+        text-decoration: none;
+        font-size: 60pt;
+        background-color: black;
+        font-weight: bold;
+    }
+    .hamburger {
+        display: block;
+    }
+    .hamburger:hover + nav ul{
+        display: block;
+    }
+    nav ul:hover {
+        display:block
+    }
+/*style rules for mobile*/
+    figure{
+        display: block;
+        text-align: center;
+    }
+    figcaption{
+        font-size: 60pt;
+        text-align: center;
+        margin-bottom: 10%;
+        color: white;
+    }
+    article{
+        font-size: 60pt;
+        text-align: center;
+        margin-bottom: 10%;
+        color: white;
+    }
+    footer{
+        font-size: 40pt;
+        text-align: center;
+        background-color: blanchedalmond;
+    }
+    table{
+        font-size: 50pt;
+        border-collapse: collapse;
+        border: 2px solid black;
+    }
+    tr{
+        border: 2px solid black;
+        background-color: blanchedalmond;
+    }
+    tr:nth-of-type(odd){
+        background-color: burlywood;
+    }
+    td{
+        border: 2px solid black;
+    }
+    video{
+        width:100%;
+        height: auto;
+    }
+    form{
+        font-size: 50pt;
+    }
+    input{
+        font-size: 50pt;
+    }
+    button{
+        font-size: 50pt;
+    }
+/*Style Rules for Desktop*/
+@media only screen and (min-width: 1000px) {
+    h1{
+        font-size: 30pt;
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+        font-size: 25pt;
+        background-color: burlywood;
+    }
+
+/*Style Rules for Nav*/
+    nav ul{
+        list-style-type: none;
+        text-align: center;
+        display: block;
+    }
+    nav li a{
+        font-size: 24pt;
+    }
+    .hamburger {
+        display: none;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+    figure{
+        display: block;
+        text-align: center;
+        grid-column: 1 / span 1;
+        width: 80%;
+        height: auto;
+        border-right: 4px solid black;
+        margin: 5%;
+    }
+    figcaption{
+        font-size: 20pt;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    article{
+        font-size: 20pt;
+        text-align: center;
+        margin-bottom: 10%;
+        grid-column: 2 / span 1;
+    }
+    .align{
+        padding: 15%;
+        font-size: 25pt;
+    }
+    footer{
+        font-size: 15pt;
+        text-align: center;
+    }
+    table{
+        font-size: 25pt;
+        border-collapse: collapse;
+        border: 2px solid black;
+        background-color: blanchedalmond;
+    }
+    caption{
+        background-color: blanchedalmond;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+    }
+    .table{
+        padding: 10%;
+        margin: 5%;
+    }
+    tr{
+        border: 2px solid black;
+    }
+    td{
+        border: 2px solid black;
+    }
+    video{
+        width:100%;
+        height: auto;
+    }
+    form{
+        font-size: 25pt;
+        text-align: center;
+    }
+    input{
+        font-size: 25pt;
+    }
+    button{
+        font-size: 25pt;
+    }
+    label{
+        background-color: white;
+    }
+}
